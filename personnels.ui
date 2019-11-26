@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Personnels</class>
+ <widget class="QWidget" name="Personnels">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1250</width>
+    <height>1750</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>120</y>
+     <width>411</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Id </string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nom</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Prenom</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Tel </string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>-180</x>
+     <y>-90</y>
+     <width>1341</width>
+     <height>1761</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../fnd.jpg</pixmap>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>90</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton{
+-moz-box-shadow: 0px 10px 14px -7px #3e7327;
+	-webkit-box-shadow: 0px 10px 14px -7px #3e7327;
+	box-shadow: 0px 10px 14px -7px #3e7327;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
+	background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	
+	background-color:pink;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+#pushButton:hover{
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #72b352), color-stop(1, #77b55a));
+	background:-moz-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-webkit-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-o-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-ms-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+	
+	background-color:blue;
+}</string>
+   </property>
+   <property name="text">
+    <string>Ajouter</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>90</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton_2{
+-moz-box-shadow: 0px 10px 14px -7px #3e7327;
+	-webkit-box-shadow: 0px 10px 14px -7px #3e7327;
+	box-shadow: 0px 10px 14px -7px #3e7327;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
+	background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	
+	background-color:pink;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+#pushButton_2:hover{
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #72b352), color-stop(1, #77b55a));
+	background:-moz-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-webkit-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-o-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-ms-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+	
+	background-color:blue;
+}</string>
+   </property>
+   <property name="text">
+    <string>Supprimer</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>90</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton_3{
+-moz-box-shadow: 0px 10px 14px -7px #3e7327;
+	-webkit-box-shadow: 0px 10px 14px -7px #3e7327;
+	box-shadow: 0px 10px 14px -7px #3e7327;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
+	background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	
+	background-color:pink;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+#pushButton_3:hover{
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #72b352), color-stop(1, #77b55a));
+	background:-moz-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-webkit-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-o-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-ms-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+	
+	background-color:blue;
+}</string>
+   </property>
+   <property name="text">
+    <string>Modifier</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>90</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton_4{
+-moz-box-shadow: 0px 10px 14px -7px #3e7327;
+	-webkit-box-shadow: 0px 10px 14px -7px #3e7327;
+	box-shadow: 0px 10px 14px -7px #3e7327;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
+	background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	
+	background-color:pink;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+#pushButton_4:hover{
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #72b352), color-stop(1, #77b55a));
+	background:-moz-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-webkit-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-o-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-ms-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+	
+	background-color:blue;
+}</string>
+   </property>
+   <property name="text">
+    <string>Affichage trie</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>130</y>
+     <width>181</width>
+     <height>119</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>nom</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>prenom</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="line_prenom"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>cin_per</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="line_id"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>tel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="line_tel"/>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="line_nom"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>310</y>
+     <width>421</width>
+     <height>91</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_9">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>30</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#pushButton_9{
+-moz-box-shadow: 0px 10px 14px -7px #3e7327;
+	-webkit-box-shadow: 0px 10px 14px -7px #3e7327;
+	box-shadow: 0px 10px 14px -7px #3e7327;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
+	background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	
+	background-color:pink;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+#pushButton_9:hover{
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #72b352), color-stop(1, #77b55a));
+	background:-moz-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-webkit-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-o-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-ms-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+	
+	background-color:blue;
+}</string>
+   </property>
+   <property name="text">
+    <string>prendre congé</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>300</y>
+     <width>171</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="styleSheet">
+       <string notr="true">#pushButton_5{
+-moz-box-shadow: 0px 10px 14px -7px #3e7327;
+	-webkit-box-shadow: 0px 10px 14px -7px #3e7327;
+	box-shadow: 0px 10px 14px -7px #3e7327;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
+	background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	
+	background-color:pink;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+#pushButton_5:hover{
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #72b352), color-stop(1, #77b55a));
+	background:-moz-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-webkit-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-o-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-ms-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+	
+	background-color:blue;
+}</string>
+      </property>
+      <property name="text">
+       <string>chercher cin</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="styleSheet">
+       <string notr="true">#pushButton_6{
+-moz-box-shadow: 0px 10px 14px -7px #3e7327;
+	-webkit-box-shadow: 0px 10px 14px -7px #3e7327;
+	box-shadow: 0px 10px 14px -7px #3e7327;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
+	background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	
+	background-color:pink;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+#pushButton_6:hover{
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #72b352), color-stop(1, #77b55a));
+	background:-moz-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-webkit-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-o-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-ms-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+	
+	background-color:blue;
+}</string>
+      </property>
+      <property name="text">
+       <string>cherche Nom </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="styleSheet">
+       <string notr="true">#pushButton_7{
+-moz-box-shadow: 0px 10px 14px -7px #3e7327;
+	-webkit-box-shadow: 0px 10px 14px -7px #3e7327;
+	box-shadow: 0px 10px 14px -7px #3e7327;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
+	background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	
+	background-color:pink;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+#pushButton_7:hover{
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #72b352), color-stop(1, #77b55a));
+	background:-moz-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-webkit-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-o-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-ms-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+	
+	background-color:blue;
+}</string>
+      </property>
+      <property name="text">
+       <string>recherche Prenom</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="styleSheet">
+       <string notr="true">#pushButton_8{
+-moz-box-shadow: 0px 10px 14px -7px #3e7327;
+	-webkit-box-shadow: 0px 10px 14px -7px #3e7327;
+	box-shadow: 0px 10px 14px -7px #3e7327;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
+	background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
+	background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+	
+	background-color:pink;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+#pushButton_8:hover{
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #72b352), color-stop(1, #77b55a));
+	background:-moz-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-webkit-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-o-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:-ms-linear-gradient(top, #72b352 5%, #77b55a 100%);
+	background:linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+	
+	background-color:blue;
+}</string>
+      </property>
+      <property name="text">
+       <string>recherche Tel</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>tableWidget</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>pushButton_4</zorder>
+  <zorder>formLayoutWidget</zorder>
+  <zorder>tableView</zorder>
+  <zorder>pushButton_9</zorder>
+  <zorder>verticalLayoutWidget</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
